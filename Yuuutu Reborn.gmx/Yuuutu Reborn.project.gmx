@@ -98,7 +98,6 @@
     <script>scripts\initBenchmarks.gml</script>
     <script>scripts\calculate_rank_old.gml</script>
   </scripts>
-  <shaders name="shaders"/>
   <fonts name="fonts">
     <font>fonts\fnt_visitor_15</font>
     <font>fonts\fnt_visitor_10</font>
