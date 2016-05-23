@@ -40,6 +40,7 @@ playerFacing = 1;
 shotCount = 0;
 crouching = false;
 running = 0;    // 0 = not running, 1 = running left, -1 = running right
+croM = false;
 looking = 0;    // 0 = not looking up or down, 1 = looking up, -1 = looking down
 shooting = false;
 onPlatform = false;
@@ -220,11 +221,11 @@ else if (playerFacing == 1) &amp;&amp; (shooting == true) &amp;&amp; (!crouching
 else if (crouching) &amp;&amp; (!running) &amp;&amp; (!shooting)
     sprite_change_body(spr_player_body_crouch_idle, 0);
 
-//crouching moving left
+//crouching moving right
 else if (running == 1) &amp;&amp; (!shooting) &amp;&amp; (crouching)
     sprite_change_body(spr_player_body_crouch, 1/4);
 
-//crouching moving right
+//crouching moving left
 else if (running == -1) &amp;&amp; (!shooting) &amp;&amp; (crouching)
     sprite_change_body(spr_player_body_crouch, 1/4);
     

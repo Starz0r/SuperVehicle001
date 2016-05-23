@@ -58,7 +58,7 @@ if (obj_player.onPlatform == 1)
 hspeed = -hspeed
 vspeed = -vspeed
 
-alarm[0] = 1;
+alarm[0] = 3;
 </string>
           </argument>
         </arguments>
