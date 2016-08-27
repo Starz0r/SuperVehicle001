@@ -362,7 +362,7 @@ if not onPlatform
 
 if (instance_exists(obj_slope) &amp;&amp; hspeed != 0)
 {
-    var moveLimit = abs(hspeed);    //sets how high/low the player can go to snap onto a slope, this can be increased to make the player able to run over steeper slopes (ie setting it to abs(hspeed)*2 allows the player to run over slopes twice as steep)
+    var moveLimit = abs(hspeed)*2;    //sets how high/low the player can go to snap onto a slope, this can be increased to make the player able to run over steeper slopes (ie setting it to abs(hspeed)*2 allows the player to run over slopes twice as steep)
     
     var slopeCheck;
     var hTest;
@@ -721,10 +721,10 @@ if (place_free(x+hspeed,y+vspeed) == false){
           <argument>
             <kind>1</kind>
             <string>if (legsVisible)
-    draw_sprite_ext(legsSpr,legsIndex,x,y,image_xscale*playerFacing,image_yscale,image_angle,image_blend,image_alpha);
+    draw_sprite_ext(legsSpr,legsIndex,x,y-3,image_xscale*playerFacing,image_yscale,image_angle,image_blend,image_alpha);
 if (bodyVisible)
-    draw_sprite_ext(bodySpr,bodyIndex,x,y,image_xscale*playerFacing,image_yscale,image_angle,image_blend,image_alpha);
-
+    draw_sprite_ext(bodySpr,bodyIndex,x,y-3,image_xscale*playerFacing,image_yscale,image_angle,image_blend,image_alpha);
+    
 //draw_sprite_ext(mask_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,0.75);
 </string>
           </argument>
