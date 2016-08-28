@@ -192,52 +192,63 @@ else {
 legsVisible = !crouching;
 
 //body
-
 //looking up
 if (looking == 1) &amp;&amp; (!shooting)
+{
     sprite_change_body(spr_player_body_shoot_up, 0);
+}
 
 //looking up and shooting
 else if (looking == 1) &amp;&amp; (shooting)
+{
     sprite_change_body(spr_player_body_shoot_up, 1/4);
+}
 
 //looking down
 else if (looking == -1) &amp;&amp; (!shooting)
+{
     sprite_change_body(spr_player_body_shoot_down, 0);
+}
 
 //looking down and shooting
 else if (looking == -1) &amp;&amp; (shooting)
+{
     sprite_change_body(spr_player_body_shoot_down, 1/4);
+}
 
-//looking right and shooting
-else if (playerFacing == -1) &amp;&amp; (shooting == true) &amp;&amp; (!crouching)
+//looking left or right and shooting
+else if (abs(playerFacing) == 1) &amp;&amp; (shooting == true) &amp;&amp; (!crouching)
+{
     sprite_change_body(spr_player_body_shoot, 1/2);
+}
 
-//looking left and shooting
-else if (playerFacing == 1) &amp;&amp; (shooting == true) &amp;&amp; (!crouching)
-    sprite_change_body(spr_player_body_shoot, 1/2);
+//crouching moving left or right
+else if (abs(running) == 1) &amp;&amp; (!shooting) &amp;&amp; (crouching)
+{
+    sprite_change_body(spr_player_body_crouch, 1/4);
+}
+
+//crouching shooting
+else if (crouching) &amp;&amp; (!running) &amp;&amp; (shooting)
+{
+    sprite_change_body(spr_player_body_crouch_shoot, 1/4);
+}
 
 //crouching idle
 else if (crouching) &amp;&amp; (!running) &amp;&amp; (!shooting)
+{
     sprite_change_body(spr_player_body_crouch_idle, 0);
+}
 
-//crouching moving right
-else if (running == 1) &amp;&amp; (!shooting) &amp;&amp; (crouching)
-    sprite_change_body(spr_player_body_crouch, 1/4);
-
-//crouching moving left
-else if (running == -1) &amp;&amp; (!shooting) &amp;&amp; (crouching)
-    sprite_change_body(spr_player_body_crouch, 1/4);
-    
-//crouching shooting
-else if (crouching) &amp;&amp; (!running) &amp;&amp; (shooting) 
-    sprite_change_body(spr_player_body_crouch_shoot, 1/4);
-    
 //idle
 else
+{
     sprite_change_body(spr_player_body_idle, 1/4);
+}
 
-
+show_debug_message("Running: "+ string(running));
+show_debug_message("Shooting: "+ string(shooting));
+show_debug_message("Crouching: "+ string(crouching));
 
 //animate
 legsIndex = (legsIndex + legsSpeed) mod sprite_get_number(legsSpr);
