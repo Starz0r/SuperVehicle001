@@ -246,10 +246,6 @@ else
     sprite_change_body(spr_player_body_idle, 1/4);
 }
 
-show_debug_message("Running: "+ string(running));
-show_debug_message("Shooting: "+ string(shooting));
-show_debug_message("Crouching: "+ string(crouching));
-
 //animate
 legsIndex = (legsIndex + legsSpeed) mod sprite_get_number(legsSpr);
 bodyIndex = (bodyIndex + bodySpeed) mod sprite_get_number(bodySpr);
