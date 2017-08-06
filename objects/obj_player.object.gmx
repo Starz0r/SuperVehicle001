@@ -164,7 +164,7 @@ if (!instance_exists(obj_player_cape))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Sprites / Animation
+            <string>///Sprites &amp; Animation
 
 var onBlock = place_meeting(x,y+1,obj_block);
 
@@ -272,7 +272,7 @@ bodyIndex = (bodyIndex + bodySpeed) mod sprite_get_number(bodySpr);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Button Inputs / Movement
+            <string>///Button Inputs &amp; Movement
 
 //check button presses
 var L = keyboard_check(global.leftbutton);
@@ -739,7 +739,8 @@ if (place_free(x+hspeed,y+vspeed) == false){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (legsVisible)
+            <string>/// Appearance
+if (legsVisible)
     draw_sprite_ext(legsSpr,legsIndex,x,y,image_xscale*playerFacing,image_yscale,image_angle,image_blend,image_alpha);
 if (bodyVisible)
     draw_sprite_ext(bodySpr,bodyIndex,x,y-1,image_xscale*playerFacing,image_yscale,image_angle,image_blend,image_alpha);
