@@ -52,21 +52,26 @@
         <sprite>sprites\spr_jump_restore</sprite>
       </sprites>
     </sprites>
+    <sprites name="Effects">
+      <sprite>sprites\spr_blue_light</sprite>
+      <sprite>sprites\spr_pixel_flash</sprite>
+      <sprite>sprites\spr_pixel_dark</sprite>
+      <sprite>sprites\spr_effect_edge</sprite>
+    </sprites>
+    <sprites name="Hazards">
+      <sprite>sprites\spr_spike_down</sprite>
+      <sprite>sprites\spr_spike_left</sprite>
+      <sprite>sprites\spr_spike_right</sprite>
+      <sprite>sprites\spr_spike_up</sprite>
+    </sprites>
     <sprite>sprites\spr_player_bullet</sprite>
-    <sprite>sprites\spr_spike_down</sprite>
-    <sprite>sprites\spr_spike_left</sprite>
-    <sprite>sprites\spr_spike_right</sprite>
-    <sprite>sprites\spr_spike_up</sprite>
     <sprite>sprites\spr_player_bullet_impact</sprite>
     <sprite>sprites\spr_jump_spark</sprite>
     <sprite>sprites\spr_hud_currency</sprite>
     <sprite>sprites\spr_hud_skull</sprite>
     <sprite>sprites\spr_hud_stopwatch</sprite>
     <sprite>sprites\mask_nothing</sprite>
-    <sprite>sprites\spr_pixel_flash</sprite>
-    <sprite>sprites\spr_pixel_dark</sprite>
     <sprite>sprites\spr_platform</sprite>
-    <sprite>sprites\spr_effect_edge</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -154,11 +159,11 @@
       <object>objects\obj_flash_screen</object>
       <object>objects\obj_darken_screen</object>
       <object>objects\obj_reveal_screen</object>
+      <object>objects\obj_blue_light</object>
     </objects>
     <object>objects\obj_jump_spark</object>
     <object>objects\obj_goal_boundary</object>
     <object>objects\obj_effect_edge</object>
-    <object>objects\obj_result_screen</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>

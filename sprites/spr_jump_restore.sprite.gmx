@@ -31,5 +31,6 @@
     <frame index="8">images\spr_jump_restore_8.png</frame>
     <frame index="9">images\spr_jump_restore_9.png</frame>
     <frame index="10">images\spr_jump_restore_10.png</frame>
+    <frame index="11">images\spr_jump_restore_11.png</frame>
   </frames>
 </sprite>
