@@ -9,10 +9,11 @@
     <sound>sound\sndDJump</sound>
     <sound>sound\sndPlayerShot</sound>
     <sound>sound\sndWalking</sound>
+    <sound>sound\sndCrouching</sound>
     <sound>sound\sndWaterSplash</sound>
     <sound>sound\sndJumpRestore</sound>
     <sound>sound\sndLanding</sound>
-    <sound>sound\sndCrouching</sound>
+    <sound>sound\sndSit</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">

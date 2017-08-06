@@ -77,14 +77,6 @@
     <instance objName="obj_block" x="544" y="224" name="inst_8CF9B65D" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_save_point" x="192" y="160" name="inst_08022CFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platform" x="512" y="288" name="inst_9E995E62" locked="0" code="hspeed = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spike_up" x="352" y="288" name="inst_E8214540" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spike_up" x="256" y="288" name="inst_987C0F59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spike_up" x="288" y="288" name="inst_35FEAB67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spike_up" x="320" y="288" name="inst_8D456FFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spike_up" x="384" y="288" name="inst_224BD5A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spike_up" x="416" y="288" name="inst_DE5F86CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spike_up" x="448" y="288" name="inst_B7264A90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spike_up" x="480" y="288" name="inst_8F6950CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike_up" x="512" y="288" name="inst_D374258C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="256" y="320" name="inst_AA4DB3E1" locked="0" code="" scaleX="10" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="224" y="384" name="inst_65E3F545" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>

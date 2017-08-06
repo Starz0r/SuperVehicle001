@@ -563,7 +563,7 @@ if (playedSittingSound == false)
     if (crouching == true)
     {
         playedSittingSound = true;
-        sound_play(sndCrouching)
+        sound_play(sndSit)
     }
 }
 
