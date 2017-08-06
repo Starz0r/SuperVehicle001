@@ -165,6 +165,7 @@
       <object>objects\obj_blue_light</object>
       <object>objects\obj_act_portal_bubble1</object>
       <object>objects\obj_act_portal_bubble2</object>
+      <object>objects\obj_player_bullet_impact</object>
     </objects>
     <object>objects\obj_jump_spark</object>
     <object>objects\obj_goal_boundary</object>
