@@ -139,7 +139,7 @@
       <object>objects\obj_player_bullet</object>
       <object>objects\obj_player_cape</object>
     </objects>
-    <objects name="Killers">
+    <objects name="Hazards">
       <objects name="Generic">
         <object>objects\obj_spike_down</object>
         <object>objects\obj_spike_left</object>
