@@ -46,6 +46,7 @@ shooting = false;
 onPlatform = false;
 frozen = false;
 wasOnGround = false;
+playedSittingSound = false;
 
 legsSpr = spr_player_legs_idle;
 legsIndex = 0;
@@ -321,6 +322,7 @@ if (!U &amp;&amp; !D)
 //uncrouching
 if (crouching &amp;&amp; (!D || !onGround)) {
     crouching = false;
+    playedSittingSound = false;
     mask_index = spr_player_hitbox;
     
     if (place_meeting(x,y,obj_block)) //recrouch if under a wall
@@ -552,6 +554,16 @@ if (wasOnGround == true)
     {
         wasOnGround = false;
         sound_play(sndLanding)
+    }
+}
+
+//sitting sound effect
+if (playedSittingSound == false)
+{
+    if (crouching == true)
+    {
+        playedSittingSound = true;
+        sound_play(sndCrouching)
     }
 }
 
