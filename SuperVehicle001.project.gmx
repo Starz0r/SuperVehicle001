@@ -46,6 +46,7 @@
         <sprite>sprites\spr_save_point</sprite>
         <sprite>sprites\spr_save_point_used</sprite>
         <sprite>sprites\spr_act_portal</sprite>
+        <sprite>sprites\spr_act_portal_overlay</sprite>
         <sprite>sprites\spr_goal_point</sprite>
         <sprite>sprites\spr_logic_box</sprite>
         <sprite>sprites\spr_logic_box_active</sprite>

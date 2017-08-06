@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_result_screen);
-with (obj_player) {instance_destroy();}
+            <string>with (obj_player) {instance_destroy();}
 global.aip = false;
+room_goto(roomTo);
 instance_destroy();
 </string>
           </argument>

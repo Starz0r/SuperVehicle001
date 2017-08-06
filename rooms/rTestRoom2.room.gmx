@@ -144,7 +144,7 @@
     <instance objName="obj_block" x="1696" y="256" name="inst_51D41E64" locked="0" code="" scaleX="10" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_effect_edge" x="2000" y="0" name="inst_C80178D7" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_jump_restore" x="960" y="416" name="inst_B63C4A6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goal_point" x="1824" y="160" name="inst_D25A51E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goal_point" x="1824" y="160" name="inst_D25A51E5" locked="0" code="roomTo = rTestHud;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="0" y="192" w="32" h="32" xo="0" yo="0" id="10001120" name="inst_05867325" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
