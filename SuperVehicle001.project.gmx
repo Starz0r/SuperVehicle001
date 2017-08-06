@@ -60,6 +60,7 @@
       <sprite>sprites\spr_effect_edge</sprite>
       <sprite>sprites\spr_act_portal_overlay</sprite>
       <sprite>sprites\spr_act_portal_bubble</sprite>
+      <sprite>sprites\spr_player_bullet_impact</sprite>
     </sprites>
     <sprites name="Hazards">
       <sprite>sprites\spr_spike_down</sprite>
@@ -68,7 +69,6 @@
       <sprite>sprites\spr_spike_up</sprite>
     </sprites>
     <sprite>sprites\spr_player_bullet</sprite>
-    <sprite>sprites\spr_player_bullet_impact</sprite>
     <sprite>sprites\spr_jump_spark</sprite>
     <sprite>sprites\spr_hud_currency</sprite>
     <sprite>sprites\spr_hud_skull</sprite>
@@ -166,8 +166,8 @@
       <object>objects\obj_act_portal_bubble1</object>
       <object>objects\obj_act_portal_bubble2</object>
       <object>objects\obj_player_bullet_impact</object>
+      <object>objects\obj_jump_spark</object>
     </objects>
-    <object>objects\obj_jump_spark</object>
     <object>objects\obj_goal_boundary</object>
     <object>objects\obj_effect_edge</object>
   </objects>
