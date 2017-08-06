@@ -46,7 +46,6 @@
         <sprite>sprites\spr_save_point</sprite>
         <sprite>sprites\spr_save_point_used</sprite>
         <sprite>sprites\spr_act_portal</sprite>
-        <sprite>sprites\spr_act_portal_overlay</sprite>
         <sprite>sprites\spr_goal_point</sprite>
         <sprite>sprites\spr_logic_box</sprite>
         <sprite>sprites\spr_logic_box_active</sprite>
@@ -58,6 +57,8 @@
       <sprite>sprites\spr_pixel_flash</sprite>
       <sprite>sprites\spr_pixel_dark</sprite>
       <sprite>sprites\spr_effect_edge</sprite>
+      <sprite>sprites\spr_act_portal_overlay</sprite>
+      <sprite>sprites\spr_act_portal_bubble</sprite>
     </sprites>
     <sprites name="Hazards">
       <sprite>sprites\spr_spike_down</sprite>
@@ -161,6 +162,8 @@
       <object>objects\obj_darken_screen</object>
       <object>objects\obj_reveal_screen</object>
       <object>objects\obj_blue_light</object>
+      <object>objects\obj_act_portal_bubble1</object>
+      <object>objects\obj_act_portal_bubble2</object>
     </objects>
     <object>objects\obj_jump_spark</object>
     <object>objects\obj_goal_boundary</object>
