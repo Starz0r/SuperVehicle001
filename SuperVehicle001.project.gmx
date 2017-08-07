@@ -67,6 +67,7 @@
       <sprite>sprites\spr_spike_left</sprite>
       <sprite>sprites\spr_spike_right</sprite>
       <sprite>sprites\spr_spike_up</sprite>
+      <sprite>sprites\spr_spike_all</sprite>
     </sprites>
     <sprite>sprites\spr_player_bullet</sprite>
     <sprite>sprites\spr_jump_spark</sprite>
@@ -75,6 +76,7 @@
     <sprite>sprites\spr_hud_stopwatch</sprite>
     <sprite>sprites\mask_nothing</sprite>
     <sprite>sprites\spr_platform</sprite>
+    <sprite>sprites\spr_fnt_grapple_8</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -112,7 +114,6 @@
     <font>fonts\fnt_visitor_20</font>
     <font>fonts\fnt_segoeui_16</font>
     <font>fonts\fnt_acknowledge_20</font>
-    <font>fonts\fnt_grapple_8</font>
     <font>fonts\fnt_gulim_8</font>
   </fonts>
   <objects name="objects">

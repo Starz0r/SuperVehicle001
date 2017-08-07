@@ -22,7 +22,7 @@ global.current_act = 0;
 //hud variables
 global.currency = 0;
 global.deaths = 0;
-global.aip = false; //wether you are in an act determines if the stopwatch is drawn (act in progress)
+global.actinprogress = false; //wether you are in an act determines if the stopwatch is drawn (act in progress)
 global.stagetime_microseconds = 0;
 global.stagetime_seconds = 0;
 

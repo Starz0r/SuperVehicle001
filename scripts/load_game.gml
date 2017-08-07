@@ -35,7 +35,7 @@ if (loadFile)
     global.savePlayerFacing = ds_list_find_value(list,ind);
     ind += 1;
     
-    global.aip = ds_list_find_value(list,ind);
+    global.actinprogress= ds_list_find_value(list,ind);
     ind += 1;
     global.current_act = ds_list_find_value(list,ind);
     ind += 1;

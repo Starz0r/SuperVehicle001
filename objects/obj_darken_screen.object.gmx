@@ -61,7 +61,7 @@ if (image_alpha &gt;= 2.5)
     instance_destroy();
     with (obj_player) {instance_destroy();}
     room_goto(roomTo);
-    global.aip = true;
+    global.actinprogress = true;
     instance_create(view_xview[0], view_yview[0], obj_reveal_screen);
 }
 </string>

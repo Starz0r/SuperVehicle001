@@ -8,6 +8,29 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>fnt_grapple_8 = font_add_sprite(spr_fnt_grapple_8, 32, 0, 0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -56,7 +79,7 @@ image_speed = 1/4;
 draw_sprite(spr_hud_currency, -1, view_xview[0]+30, view_yview[0]+23);
 draw_sprite(spr_hud_skull, -1, view_xview[0]+30, view_yview[0]+45); //animation needs to go slower
 
-if (global.aip == true) {
+if (global.actinprogress == true) {
     draw_sprite(spr_hud_stopwatch, -1, view_xview[0]+30, view_yview[0]+67);
 }
 
@@ -67,7 +90,7 @@ draw_set_valign(fa_top);
 draw_text(view_xview[0]+20, view_yview[0]+23, "   x 0 ");
 draw_text(view_xview[0]+20, view_yview[0]+45, "   x "+string(global.deaths)+" ");
 
-if (global.aip == true) 
+if (global.actinprogress == true) 
 {
     var drawMin = global.stagetime_seconds div 60;
     var drawSec = global.stagetime_seconds mod 60;
@@ -100,9 +123,13 @@ if (global.aip == true)
             <kind>1</kind>
             <string>///Total Time and FPS
 draw_set_color(c_white);
+draw_set_halign(fa_right);
 draw_set_font(fnt_grapple_8);
-draw_text(view_xview[0]+650, view_yview[0], "FPs: "+string(fps))
-draw_text(view_xview[0]+530, view_yview[0], "TImE: "+string(global.time)+":"+string(global.timeMicro));
+draw_text(view_xview[0]+720, 2, "TIME: "+string(global.timeHour)+":"+string(global.timeMinute)+":"+string(global.timeSecond) + "  FPS: "+string(fps));
+
+
+
+//draw_text(view_xview[0]+720, 2, "TIME: "+string(global.hour)+":"+string(global.muni)+":"+string(global.sec) + "  FPS: " + string(fps));
 </string>
           </argument>
         </arguments>

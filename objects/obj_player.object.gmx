@@ -27,16 +27,14 @@
             <kind>1</kind>
             <string>// Init Variables
 doubleJumpAvailable = false;
-jumpPower = 7.5;    //7;
-doubleJumpPower = 7;    //6;
+jumpPower = 7.5;
+doubleJumpPower = 7;
 gravity_direction = 270;
-gravity = 0.4;  //0.3;
+gravity = 0.4;
 maxFallSpeed = 9;
-maxRunSpeed = 3;    //2.5; //2  //3
-maxCrouchSpeed = 1.5;   //1
-//runSpeed = 0;
+maxRunSpeed = 3;
+maxCrouchSpeed = 1.5;
 playerFacing = 1;
-//shootDir = 0;
 shotCount = 0;
 crouching = false;
 running = 0;    // 0 = not running, 1 = running left, -1 = running right

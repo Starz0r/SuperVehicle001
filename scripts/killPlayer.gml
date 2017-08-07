@@ -5,7 +5,7 @@ if (instance_exists(obj_player))
     
     global.deaths += 1;
     
-    if (global.aip == true)
+    if (global.actinprogress == true)
     {
         global.stagetime_deaths += 1;
     }

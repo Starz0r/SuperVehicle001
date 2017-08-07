@@ -50,7 +50,7 @@ ds_list_add(list,global.savePlayerX);
 ds_list_add(list,global.savePlayerY);
 ds_list_add(list,global.savePlayerFacing);
 
-ds_list_add(list,global.aip);
+ds_list_add(list,global.actinprogress);
 ds_list_add(list,global.current_act);
 ds_list_add(list,global.stagetime_microseconds);
 ds_list_add(list,global.stagetime_seconds);

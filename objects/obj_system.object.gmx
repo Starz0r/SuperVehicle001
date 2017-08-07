@@ -51,8 +51,11 @@
             <string>global.timeMicro += delta_time;
 global.time += global.timeMicro div 1000000;
 global.timeMicro = global.timeMicro mod 1000000;
+global.timeHour = global.time div 3600;
+global.timeMinute = global.time div 60;
+global.timeSecond = (global.time mod 3600) mod 60;
 
-if (global.aip == true)
+if (global.actinprogress == true)
 {
     global.stagetime_microseconds += delta_time;
     global.stagetime_seconds += global.stagetime_microseconds div 1000000;
