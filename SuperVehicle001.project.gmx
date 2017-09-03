@@ -51,10 +51,12 @@
         <sprite>sprites\spr_logic_box</sprite>
         <sprite>sprites\spr_logic_box_active</sprite>
         <sprite>sprites\spr_jump_restore</sprite>
+        <sprite>sprites\spr_jump_restore_red</sprite>
       </sprites>
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\spr_blue_light</sprite>
+      <sprite>sprites\spr_red_light</sprite>
       <sprite>sprites\spr_pixel_flash</sprite>
       <sprite>sprites\spr_pixel_dark</sprite>
       <sprite>sprites\spr_effect_edge</sprite>
@@ -157,6 +159,7 @@
         <object>objects\obj_goal_point</object>
         <object>objects\obj_logic_box</object>
         <object>objects\obj_jump_restore</object>
+        <object>objects\obj_jump_restore_red</object>
       </objects>
     </objects>
     <objects name="Effects">
@@ -164,6 +167,7 @@
       <object>objects\obj_darken_screen</object>
       <object>objects\obj_reveal_screen</object>
       <object>objects\obj_blue_light</object>
+      <object>objects\obj_red_light</object>
       <object>objects\obj_act_portal_bubble1</object>
       <object>objects\obj_act_portal_bubble2</object>
       <object>objects\obj_player_bullet_impact</object>

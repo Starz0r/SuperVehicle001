@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>// Init Variables
 doubleJumpAvailable = false;
+superJumpAvailable = false;
 jumpPower = 7.5;
 doubleJumpPower = 7;
 gravity_direction = 270;
@@ -660,7 +661,7 @@ if keyboard_check_pressed(global.shootbutton){ //Pressing Shoot
             <kind>1</kind>
             <string>if (vspeed &gt;= 0 &amp;&amp; (yprevious &lt;= other.yprevious-13 || onPlatform))    //make sure player is falling and landing directly on the platform
 {
-    y = other.y-14; //snap to platform
+    y = other.y-17; //snap to platform
     vspeed = max(other.vspeed,0); //other.vspeed;  //move with the platform
     hspeed = other.hspeed+running*maxRunSpeed
     onPlatform = true;
@@ -707,6 +708,7 @@ if(place_free(x,y+vspeed) == false){
   if(vspeed &gt; 0){
     move_contact_solid(270,abs(vspeed));
     doubleJumpAvailable = true;
+    superJumpAvailable = false;
   }
   vspeed = 0;
 }
