@@ -46,6 +46,7 @@ onPlatform = false;
 frozen = false;
 wasOnGround = false;
 playedSittingSound = false;
+slip = 0;
 
 legsSpr = spr_player_legs_idle;
 legsIndex = 0;
@@ -254,6 +255,45 @@ bodyIndex = (bodyIndex + bodySpeed) mod sprite_get_number(bodySpr);
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*if (slipBlockTouching != noone)
+{
+    if (hspeed &gt; 0)
+    {
+        hspeed += ((slipBlockTouching.slip * running)*4)*-1;
+            
+        if (hspeed &lt;= 0)
+            hspeed = 0;
+    }
+    else if (hspeed &lt; 0)
+    {
+        hspeed += ((slipBlockTouching.slip * running)*4)*-1;
+            
+        if (hspeed &gt;= 0)
+            hspeed = 0;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -281,6 +321,7 @@ var D = keyboard_check(global.downbutton);
 
 var onBlock = place_meeting(x,y+1,obj_block);
 var notOnBlock = place_free(x,y+1);
+var slipBlockTouching = instance_place(x,y+12,obj_block_slip);   //check if near a slip block
 
 //check if the player is no longer on a platform
 if (onPlatform &amp;&amp; !place_meeting(x,y+1,obj_platform))
@@ -332,6 +373,40 @@ if (crouching &amp;&amp; (!D || !onGround)) {
     }
 }
 
+//slipping
+if (running != 0)
+{
+    if (slipBlockTouching != noone)
+    {
+        if ((running == 1 &amp;&amp; hspeed &lt; maxRunSpeed) || (running == -1 &amp;&amp; hspeed &gt; -maxRunSpeed))
+        hspeed += (slipBlockTouching.slip) * running;
+    }
+}
+else
+{
+    if (slipBlockTouching == noone)
+        hspeed = 0;
+    else
+    {
+        if (hspeed &gt; 0)
+        {
+            hspeed -= slipBlockTouching.slip;
+            
+            if (hspeed &lt;= 0)
+                hspeed = 0;
+        }
+        else if (hspeed &lt; 0)
+        {
+            hspeed += slipBlockTouching.slip;
+            
+            if (hspeed &gt;= 0)
+                hspeed = 0;
+        }
+    }
+}
+
+if (slipBlockTouching == noone) and not (onPlatform) 
+    hspeed = 0;
 
 //moving left/right
 if (L)
@@ -364,7 +439,10 @@ else
     horSpeed = maxRunSpeed;
 
 if not onPlatform
-    hspeed = running * horSpeed;
+    hspeed += running * horSpeed
+
+if (slipBlockTouching != noone)
+    hspeed = clamp(hspeed, -maxRunSpeed*2, maxRunSpeed*2)
 
 //slopes
 

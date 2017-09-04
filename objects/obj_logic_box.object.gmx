@@ -87,8 +87,7 @@ if (playerTouch != noone)
             <string>///Triggers Go Here
 if (tid == 1) 
 {
-    instance_create(1824, 256, obj_jump_restore);
-    instance_create(1920, 224, obj_jump_restore);
+    instance_create(1856, 256, obj_jump_restore_red);
 }
 </string>
           </argument>

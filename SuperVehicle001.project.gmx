@@ -36,6 +36,7 @@
       <sprite>sprites\spr_player_hitbox_small</sprite>
       <sprite>sprites\spr_player_hitbox_small_old</sprite>
       <sprite>sprites\spr_block</sprite>
+      <sprite>sprites\spr_block_slip</sprite>
       <sprite>sprites\spr_slope_left</sprite>
       <sprite>sprites\spr_slope_downleft</sprite>
       <sprite>sprites\spr_slope_right</sprite>
@@ -127,6 +128,7 @@
     <object>objects\obj_act_milestones</object>
     <objects name="Invisible">
       <object>objects\obj_block</object>
+      <object>objects\obj_block_slip</object>
       <object>objects\obj_slope_left</object>
       <object>objects\obj_slope_downleft</object>
       <object>objects\obj_slope_right</object>
@@ -183,7 +185,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>
-    <room>rooms\rTestHud</room>
+    <room>rooms\rTestHub</room>
     <room>rooms\rTestRoom</room>
     <room>rooms\rTestRoom2</room>
   </rooms>
