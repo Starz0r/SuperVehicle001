@@ -14,6 +14,7 @@
     <sound>sound\sndJumpRestore</sound>
     <sound>sound\sndLanding</sound>
     <sound>sound\sndSit</sound>
+    <sound>sound\sndDeath</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
@@ -63,6 +64,8 @@
       <sprite>sprites\spr_act_portal_overlay</sprite>
       <sprite>sprites\spr_act_portal_bubble</sprite>
       <sprite>sprites\spr_player_bullet_impact</sprite>
+      <sprite>sprites\spr_gameover_shard</sprite>
+      <sprite>sprites\spr_gameover_burst</sprite>
     </sprites>
     <sprites name="Hazards">
       <sprite>sprites\spr_spike_down</sprite>
@@ -172,6 +175,8 @@
       <object>objects\obj_act_portal_bubble2</object>
       <object>objects\obj_player_bullet_impact</object>
       <object>objects\obj_jump_spark</object>
+      <object>objects\obj_gameover_shard</object>
+      <object>objects\obj_gameover_burst</object>
     </objects>
     <object>objects\obj_goal_boundary</object>
     <object>objects\obj_effect_edge</object>
