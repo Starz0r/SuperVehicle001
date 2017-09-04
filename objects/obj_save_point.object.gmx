@@ -51,6 +51,8 @@
             <string>if (keyboard_check_pressed(global.savebutton) &amp;&amp; sprite_index != spr_save_point_used)
 {
     sprite_index = spr_save_point_used;
+    sound_play(sndSavePt1);
+    sound_play(sndSavePt2);
     save_game(true);
 }
 </string>
