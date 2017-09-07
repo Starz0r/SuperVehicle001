@@ -322,6 +322,7 @@ var D = keyboard_check(global.downbutton);
 var onBlock = place_meeting(x,y+1,obj_block);
 var notOnBlock = place_free(x,y+1);
 var slipBlockTouching = instance_place(x,y+12,obj_block_slip);   //check if near a slip block
+var platformTouching = instance_place(x, y+1, obj_platform);
 
 //check if the player is no longer on a platform
 if (onPlatform &amp;&amp; !place_meeting(x,y+1,obj_platform))
@@ -405,7 +406,7 @@ else
     }
 }
 
-if (slipBlockTouching == noone) and not (onPlatform) 
+if (slipBlockTouching == noone) and not (onPlatform)
     hspeed = 0;
 
 //moving left/right
@@ -444,8 +445,23 @@ if not onPlatform
 if (slipBlockTouching != noone)
     hspeed = clamp(hspeed, -maxRunSpeed*2, maxRunSpeed*2)
 
-//slopes
+//platform (mirror of what's found in the collision event for objPlatform)
+if (onPlatform)
+{
+    if (platformTouching != noone)
+    {
+        if (vspeed &gt;= 0 &amp;&amp; (yprevious &lt;= platformTouching.yprevious-13 || onPlatform)) //make sure player is falling and landing directly on the platform
+        {
+            y = platformTouching.y-17; //snap to platform
+            vspeed = max(other.vspeed,0); //other.vspeed;  //move with the platform
+            hspeed = platformTouching.hspeed+running*maxRunSpeed
+            onPlatform = true;
+            doubleJumpAvailable = true;
+        }
+    }
+}
 
+//slopes
 if (instance_exists(obj_slope) &amp;&amp; hspeed != 0)
 {
     var moveLimit = abs(hspeed)*2;    //sets how high/low the player can go to snap onto a slope, this can be increased to make the player able to run over steeper slopes (ie setting it to abs(hspeed)*2 allows the player to run over slopes twice as steep)
