@@ -17,6 +17,7 @@
     <sound>sound\sndDeath</sound>
     <sound>sound\sndSavePt1</sound>
     <sound>sound\sndSavePt2</sound>
+    <sound>sound\sndSpring</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
@@ -56,6 +57,7 @@
         <sprite>sprites\spr_logic_box_active</sprite>
         <sprite>sprites\spr_jump_restore</sprite>
         <sprite>sprites\spr_jump_restore_red</sprite>
+        <sprite>sprites\spr_spring</sprite>
       </sprites>
     </sprites>
     <sprites name="Effects">
@@ -167,6 +169,7 @@
         <object>objects\obj_logic_box</object>
         <object>objects\obj_jump_restore</object>
         <object>objects\obj_jump_restore_red</object>
+        <object>objects\obj_spring</object>
       </objects>
     </objects>
     <objects name="Effects">
@@ -190,6 +193,7 @@
     <room>rooms\rTestHub</room>
     <room>rooms\rTestRoom</room>
     <room>rooms\rTestRoom2</room>
+    <room>rooms\rTestRoom3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
