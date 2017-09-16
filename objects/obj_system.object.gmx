@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.stagetime_deaths = 0;
+global.fnt_damage_font = font_add_sprite(spr_damage_font,46,0,-4);
 </string>
           </argument>
         </arguments>

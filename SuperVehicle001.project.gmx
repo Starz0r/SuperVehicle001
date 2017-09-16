@@ -88,6 +88,8 @@
     <sprite>sprites\mask_nothing</sprite>
     <sprite>sprites\spr_platform</sprite>
     <sprite>sprites\spr_fnt_grapple_8</sprite>
+    <sprite>sprites\spr_target_dummy</sprite>
+    <sprite>sprites\spr_damage_font</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -118,6 +120,7 @@
     <script>scripts\initLanguageStrings.gml</script>
     <script>scripts\initBenchmarks.gml</script>
     <script>scripts\calculate_rank_old.gml</script>
+    <script>scripts\take_damage.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_visitor_15</font>
@@ -185,9 +188,11 @@
       <object>objects\obj_jump_spark</object>
       <object>objects\obj_gameover_shard</object>
       <object>objects\obj_gameover_burst</object>
+      <object>objects\obj_damage_font</object>
     </objects>
     <object>objects\obj_goal_boundary</object>
     <object>objects\obj_effect_edge</object>
+    <object>objects\obj_target_dummy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>
