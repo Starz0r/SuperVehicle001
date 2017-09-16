@@ -134,6 +134,14 @@ if (!instance_exists(obj_player_cape))
             }
         }
         
+        if (sliding == true)
+        {
+            if (playerFacing == 1)
+                shootDir = 0;
+            else
+                shootDir = 180;
+        }
+        
         proj.direction = shootDir
         proj.speed = 12;
         if (shootDir == 0) or (shootDir == 180) {
