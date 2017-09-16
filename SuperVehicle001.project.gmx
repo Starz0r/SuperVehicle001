@@ -33,6 +33,7 @@
       <sprite>sprites\spr_player_cape</sprite>
       <sprite>sprites\spr_player_body_crouch_idle</sprite>
       <sprite>sprites\spr_player_body_crouch_shoot</sprite>
+      <sprite>sprites\spr_player_body_sliding</sprite>
     </sprites>
     <sprites name="Masks">
       <sprite>sprites\spr_player_hitbox</sprite>

@@ -47,6 +47,9 @@ frozen = false;
 wasOnGround = false;
 playedSittingSound = false;
 slip = 0;
+sliding = false;
+slideForce = 8;
+slideCur = 0;
 
 legsSpr = spr_player_legs_idle;
 legsIndex = 0;
@@ -121,9 +124,14 @@ if (!instance_exists(obj_player_cape))
         if (crouching == true)
         {
             running = 0;
-            vspeed = 0;
-            hspeed = 0;
-            frozen = true
+            
+            //if sliding, don't freeze or stop his movement
+            if (sliding == false)
+            {
+                vspeed = 0;
+                hspeed = 0;
+                frozen = true
+            }
         }
         
         proj.direction = shootDir
@@ -191,10 +199,17 @@ else {
 }
 
 legsVisible = !crouching;
+legsVisible = !sliding;
 
 //body
+//sliding
+if (sliding)
+{
+    sprite_change_body(spr_player_body_sliding, 0);
+}
+
 //looking up
-if (looking == 1) &amp;&amp; (!shooting)
+else if (looking == 1) &amp;&amp; (!shooting)
 {
     sprite_change_body(spr_player_body_shoot_up, 0);
 }
@@ -369,6 +384,24 @@ else
 
 if (slipBlockTouching == noone) and not (onPlatform)
     hspeed = 0;
+    
+//sliding
+if (crouching) &amp;&amp; (keyboard_check_pressed(global.jumpbutton))
+{
+    slideCur = slideForce;
+    sliding = true;
+    hspeed += slideCur * playerFacing
+}
+
+if (sliding == true)
+{
+    slideCur -= 0.25;
+    
+    hspeed += slideCur * playerFacing
+    
+    if (slideCur &lt;= 0)
+        sliding = false;
+}
 
 //moving left/right
 if (L)
@@ -625,7 +658,7 @@ if (playedSittingSound == false)
 
 if vspeed &gt; maxFallSpeed {vspeed = maxFallSpeed;}
 
-if keyboard_check_pressed(global.jumpbutton){ //Press Jump
+if keyboard_check_pressed(global.jumpbutton) &amp;&amp; (!sliding) { //Press Jump
         playerJumpScript();
     }
     
