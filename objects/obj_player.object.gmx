@@ -394,7 +394,7 @@ if (slipBlockTouching == noone) and not (onPlatform)
     hspeed = 0;
     
 //sliding
-if (crouching) &amp;&amp; (keyboard_check_pressed(global.jumpbutton))
+if (crouching) &amp;&amp; (keyboard_check_pressed(global.jumpbutton)) &amp;&amp; (!sliding)
 {
     slideCur = slideForce;
     sliding = true;
