@@ -40,6 +40,8 @@
       <sprite>sprites\spr_player_hitbox_small</sprite>
       <sprite>sprites\spr_player_hitbox_small_old</sprite>
       <sprite>sprites\spr_block</sprite>
+      <sprite>sprites\spr_block_conveyor_r</sprite>
+      <sprite>sprites\spr_block_conveyor_l</sprite>
       <sprite>sprites\spr_block_slip</sprite>
       <sprite>sprites\spr_slope_left</sprite>
       <sprite>sprites\spr_slope_downleft</sprite>
@@ -147,6 +149,9 @@
       <object>objects\obj_camera</object>
       <object>objects\obj_frameskip</object>
       <object>objects\obj_slope</object>
+      <object>objects\obj_block_conveyor_L</object>
+      <object>objects\obj_block_conveyor_R</object>
+      <object>objects\obj_block_conveyor</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player_start</object>

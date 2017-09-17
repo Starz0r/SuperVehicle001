@@ -411,6 +411,12 @@ if (sliding == true)
         sliding = false;
 }
 
+//conveyors
+var slideBlockTouching = instance_place(x,y+1,obj_block_conveyor);   //check if on a slide block
+
+if (slideBlockTouching != noone)    //on a slide block, start moving with it
+    hspeed += slideBlockTouching.spd;
+    
 //moving left/right
 if (L)
 {
