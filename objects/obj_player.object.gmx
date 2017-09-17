@@ -435,13 +435,13 @@ if (!L &amp;&amp; !R)
     running = 0;
 }
 
-var horSpeed;
-if (crouching)
+var horSpeed = 0;
+if (crouching) and (not sliding)
     horSpeed = maxCrouchSpeed;
-else
+else if (not crouching) and (not sliding)
     horSpeed = maxRunSpeed;
 
-if not onPlatform
+if not onPlatform and not sliding
     hspeed += running * horSpeed
 
 if (slipBlockTouching != noone)
