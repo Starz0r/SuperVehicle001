@@ -106,7 +106,6 @@ if (!instance_exists(obj_player_cape))
         sound_play(sndPlayerShot);
         shooting = true;
         shotCount += 1
-        proj = instance_create(x+(8*playerFacing), y-11, obj_player_bullet);
         
         var shootDir;
         
@@ -143,6 +142,16 @@ if (!instance_exists(obj_player_cape))
                 shootDir = 180;
         }
         
+        //TODO: should probably use lengthdir here
+        if (shootDir == 90)
+            proj = instance_create(x+(0*playerFacing), y-22, obj_player_bullet);
+        else if (shootDir == 270)
+            proj = instance_create(x+(6*playerFacing), y+12, obj_player_bullet);
+        else if (not crouching)
+            proj = instance_create(x+(8*playerFacing), y-11, obj_player_bullet);
+        else if (crouching)
+            proj = instance_create(x+(8*playerFacing), y, obj_player_bullet);
+            
         proj.direction = shootDir
         proj.speed = 12;
         if (shootDir == 0) or (shootDir == 180) {
