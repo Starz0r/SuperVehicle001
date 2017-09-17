@@ -206,8 +206,7 @@ else {
         sprite_change_legs(spr_player_legs_idle, 0);
 }
 
-legsVisible = !crouching;
-legsVisible = !sliding;
+legsVisible = (not crouching and not sliding);
 
 //body
 //sliding
