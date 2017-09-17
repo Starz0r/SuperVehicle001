@@ -80,7 +80,7 @@ draw_sprite(spr_hud_currency, -1, view_xview[0]+30, view_yview[0]+23);
 draw_sprite(spr_hud_skull, -1, view_xview[0]+30, view_yview[0]+45); //animation needs to go slower
 
 if (global.actinprogress == true) {
-    draw_sprite(spr_hud_stopwatch, -1, view_xview[0]+30, view_yview[0]+67);
+    draw_sprite(spr_hud_stopwatch, -1, view_xview[0]+29, view_yview[0]+67);
 }
 
 draw_set_font(fnt_visitor_20);

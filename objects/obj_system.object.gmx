@@ -162,7 +162,10 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>d3d_set_projection_ortho(view_xview[0],view_yview[0],view_wport[0],view_hport[0],0);
+            <string>///only required for the death animation
+//do not remove unless you are changing the death animation entirely
+//or you know what you are doing.
+d3d_set_projection_ortho(view_xview[0],view_yview[0],view_wport[0],view_hport[0],0);
 </string>
           </argument>
         </arguments>
