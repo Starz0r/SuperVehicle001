@@ -85,9 +85,6 @@ if (global.actinprogress == true)
           <argument>
             <kind>1</kind>
             <string>initGlobals();
-initResults();
-initStages();
-initBenchmarks();
 
 if (file_exists("Data\save"+string(global.savenum)))  //check if current save exists
     load_game(true);

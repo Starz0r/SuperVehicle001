@@ -19,6 +19,7 @@
     <sound>sound\sndSavePt2</sound>
     <sound>sound\sndSpring</sound>
     <sound>sound\sndSplash</sound>
+    <sound>sound\sndSlide</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
@@ -106,7 +107,7 @@
       <script>scripts\sprite_change_legs.gml</script>
       <script>scripts\sprite_change_body.gml</script>
     </scripts>
-    <scripts name="GM Extended">
+    <scripts name="Draw">
       <script>scripts\draw_text_outline_outdated.gml</script>
       <script>scripts\draw_text_outline.gml</script>
     </scripts>
@@ -119,11 +120,6 @@
     <script>scripts\player_slope.gml</script>
     <script>scripts\initGlobals.gml</script>
     <script>scripts\killPlayer.gml</script>
-    <script>scripts\initResults.gml</script>
-    <script>scripts\initStages.gml</script>
-    <script>scripts\initLanguageStrings.gml</script>
-    <script>scripts\initBenchmarks.gml</script>
-    <script>scripts\calculate_rank_old.gml</script>
     <script>scripts\take_damage.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -137,7 +133,6 @@
   <objects name="objects">
     <object>objects\obj_system</object>
     <object>objects\obj_messages</object>
-    <object>objects\obj_act_milestones</object>
     <objects name="Invisible">
       <object>objects\obj_block</object>
       <object>objects\obj_block_slip</object>

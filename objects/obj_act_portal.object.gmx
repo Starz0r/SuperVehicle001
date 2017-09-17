@@ -57,7 +57,6 @@ roomTo = "";
     instance_create(x+random_range(-30,30), y+random_range(32,42), obj_act_portal_bubble1);
     if (keyboard_check_pressed(global.actionbutton) == true)
     {
-        with (obj_act_milestones) {instance_destroy();}
         global._show_message = false
         global._messasge = "";
         with (obj_player) {instance_destroy();}
@@ -67,17 +66,11 @@ roomTo = "";
         global.current_act = act_num;
     }
     
-    if (!instance_exists(obj_act_milestones)) 
-    {
-        instance_create(0, 0, obj_act_milestones);
-    }
-    
     global._show_message = true
     global._message = "[Action Key] to Enter"
 }
 else
 {
-    with (obj_act_milestones) {instance_destroy();}
     global._show_message = false
     global._messasge = ""; //not needed, but common courtesy
 }

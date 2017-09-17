@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>with (obj_player) {instance_destroy();}
 global.actinprogress = false;
+global.stagetime_microseconds = 0;
+global.stagetime_seconds = 0;
+global.stagetime_microseconds = 0;
 room_goto(roomTo);
 instance_destroy();
 </string>

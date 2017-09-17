@@ -408,6 +408,7 @@ if (crouching) &amp;&amp; (keyboard_check_pressed(global.jumpbutton)) &amp;&amp;
     slideCur = slideForce;
     sliding = true;
     hspeed += slideCur * playerFacing
+    sound_play(sndSlide);
 }
 
 if (sliding == true)
