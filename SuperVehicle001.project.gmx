@@ -18,6 +18,7 @@
     <sound>sound\sndSavePt1</sound>
     <sound>sound\sndSavePt2</sound>
     <sound>sound\sndSpring</sound>
+    <sound>sound\sndSplash</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
@@ -61,6 +62,7 @@
         <sprite>sprites\spr_jump_restore</sprite>
         <sprite>sprites\spr_jump_restore_red</sprite>
         <sprite>sprites\spr_spring</sprite>
+        <sprite>sprites\spr_water_surface</sprite>
       </sprites>
     </sprites>
     <sprites name="Effects">
@@ -179,6 +181,7 @@
         <object>objects\obj_jump_restore</object>
         <object>objects\obj_jump_restore_red</object>
         <object>objects\obj_spring</object>
+        <object>objects\obj_water_surface</object>
       </objects>
     </objects>
     <objects name="Effects">

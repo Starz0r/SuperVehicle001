@@ -50,6 +50,7 @@ slip = 0;
 sliding = false;
 slideForce = 8;
 slideCur = 0;
+inWater = 0; //managed by water objects and not the player object
 
 legsSpr = spr_player_legs_idle;
 legsIndex = 0;
@@ -409,6 +410,9 @@ if (sliding == true)
     if (slideCur &lt;= 0)
         sliding = false;
 }
+
+//water (for sound only really)
+inWater = place_meeting(x, y, obj_water_surface)
 
 //conveyors
 var slideBlockTouching = instance_place(x,y+1,obj_block_conveyor);   //check if on a slide block

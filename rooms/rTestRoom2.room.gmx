@@ -3,7 +3,7 @@
   <caption></caption>
   <width>2000</width>
   <height>480</height>
-  <vsnap>32</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -118,12 +118,6 @@
     <instance objName="obj_spike_left" x="928" y="64" name="inst_BE1D3AF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike_left" x="896" y="32" name="inst_9F5610B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike_left" x="896" y="0" name="inst_0171ED1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_jump_restore" x="1024" y="416" name="inst_F825FE73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_jump_restore" x="1088" y="384" name="inst_67D17FFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_jump_restore" x="1152" y="352" name="inst_46F2E9B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_jump_restore" x="1216" y="352" name="inst_954CDD83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_jump_restore" x="1280" y="320" name="inst_FEC6A3D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_jump_restore" x="1344" y="320" name="inst_54AEB3C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1376" y="352" name="inst_54E6C23A" locked="0" code="" scaleX="5" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike_up" x="1408" y="256" name="inst_08A1B691" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike_up" x="1440" y="288" name="inst_DC07AC1A" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
@@ -135,12 +129,15 @@
     <instance objName="obj_block" x="1568" y="320" name="inst_08CC1761" locked="0" code="" scaleX="3" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1696" y="256" name="inst_51D41E64" locked="0" code="" scaleX="10" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_effect_edge" x="2000" y="0" name="inst_C80178D7" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_jump_restore" x="960" y="416" name="inst_B63C4A6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slope_right" x="736" y="288" name="inst_13768D97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slope_right" x="704" y="320" name="inst_61586FFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="736" y="320" name="inst_A83254E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goal_boundary" x="2000" y="0" name="inst_F828A889" locked="0" code="roomTo = rTestRoom3;&#xA;" scaleX="1" scaleY="15" colour="4294967295" rotation="0"/>
     <instance objName="obj_death_boundary" x="0" y="480" name="inst_FF3DE1C5" locked="0" code="" scaleX="62.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_surface" x="896" y="400" name="inst_8D139A77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_surface" x="1024" y="400" name="inst_44550C8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_surface" x="1152" y="400" name="inst_487EC293" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_surface" x="1280" y="400" name="inst_1C0C318C" locked="0" code="" scaleX="0.75" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="0" y="192" w="32" h="32" xo="0" yo="0" id="10001120" name="inst_05867325" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
