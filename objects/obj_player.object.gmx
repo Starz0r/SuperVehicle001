@@ -454,7 +454,7 @@ if (slipBlockTouching != noone)
     hspeed = clamp(hspeed, -maxRunSpeed*2, maxRunSpeed*2)
 
 //platform (mirror of what's found in the collision event for objPlatform)
-if (onPlatform)
+if (onPlatform) and (not sliding)
 {
     if (platformTouching != noone)
     {
