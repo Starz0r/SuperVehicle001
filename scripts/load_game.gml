@@ -48,9 +48,6 @@ if (loadFile)
     global.currency = ds_list_find_value(list,ind);
     ind += 1;
     
-    global.result_list = ds_list_find_value(list,ind);
-    ind += 1;
-    
     //load md5 string from the save list
     var listMd5 = ds_list_find_value(list,ind);
     

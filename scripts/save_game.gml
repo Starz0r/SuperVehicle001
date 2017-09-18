@@ -56,7 +56,6 @@ ds_list_add(list,global.stagetime_microseconds);
 ds_list_add(list,global.stagetime_seconds);
 ds_list_add(list,global.stagetime_deaths);
 ds_list_add(list,global.currency);
-ds_list_add(list,global.result_list);
 //add md5 hash to the end to verify saves and make them harder to hack
 ds_list_add(list,md5_string_unicode(ds_list_write(list)+global.md5StrAdd));
 
